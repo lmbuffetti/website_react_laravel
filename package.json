@@ -1,0 +1,46 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.18",
+        "bootstrap": "^4.0.0",
+        "popper.js": "^1.12",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-mix": "^2.0",
+        "lodash": "^4.17.4",
+        "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "babel-minify-webpack-plugin": "^0.3.1",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "compression": "^1.7.2",
+        "compression-webpack-plugin": "^1.1.11",
+        "connect": "3.x",
+        "express": "^4.16.3",
+        "express-google-analytics": "^1.0.2",
+        "file-loader": "^1.1.11",
+        "image-webpack-loader": "^4.2.0",
+        "imagemin-webpack": "^3.0.0",
+        "nighthawk": "^2.2.0",
+        "prop-types": "^15.6.1",
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "react-helmet": "^5.2.0",
+        "react-router-dom": "^4.2.2",
+        "robots.txt": "^1.1.0",
+        "striptags": "^3.1.1",
+        "uglifyjs-webpack-plugin": "^1.2.5",
+        "url-loader": "^1.0.1"
+    }
+}
